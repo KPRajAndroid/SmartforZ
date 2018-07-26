@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="amplify_title_text_view" type="id">0x7f0e0007</item>
+    <item name="amplify_positive_button" type="id">0x7f0e0005</item>
+    <item name="amplify_negative_button" type="id">0x7f0e0004</item>
+    <item name="amplify_subtitle_text_view" type="id">0x7f0e0006</item>
+</resources>

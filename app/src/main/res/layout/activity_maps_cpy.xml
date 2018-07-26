@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wepopandroid1.myapplicationtest.MapsActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/but_attendance"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/attentance"
+                    android:onClick="startAnimation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/but_attendance"
+                    android:layout_centerHorizontal="true"
+                    android:text="Attendance" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/but_incident"
+                    android:layout_centerHorizontal="true"
+                    android:text="Incident Report" />
+
+                <Button
+                    android:id="@+id/but_incident"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="scanQR"
+                    android:background="@drawable/icident_report"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/but_panic"
+                    android:layout_centerHorizontal="true"
+                    android:text="Panic Alarm" />
+
+                <Button
+                    android:id="@+id/but_panic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/panic_alarm"
+                    android:onClick="panicalarm"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <Button
+                    android:id="@+id/but_start"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="startAnimation"
+                    android:background="@drawable/start_patrol" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/but_start"
+                    android:layout_centerHorizontal="true"
+                    android:text="Start Patrol" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/but_qr"
+                    android:layout_centerHorizontal="true"
+                    android:text="Check Point" />
+
+                <Button
+                    android:id="@+id/but_qr"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="scanQR"
+                    android:background="@drawable/scan_qr_96px"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/but_stop"
+                    android:layout_centerHorizontal="true"
+                    android:text="End Patrol"
+                    android:id="@+id/textView3" />
+
+                <Button
+                    android:id="@+id/but_stop"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="animateBack"
+                    android:background="@drawable/end_patrol"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="vertical">
+        <SurfaceView
+            android:id="@+id/camera_cpy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/ip_address_cpy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|top"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

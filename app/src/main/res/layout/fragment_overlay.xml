@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/overlay_text_margin"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/resolutionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/overlay_text_margin"
+        android:shadowColor="@color/overlay_shadow_color"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text=""
+        android:textColor="@color/overlay_text_color"
+        android:textSize="@dimen/overlay_text_size" />
+
+    <TextView
+        android:id="@+id/bitrateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/overlay_text_margin"
+        android:shadowColor="@color/overlay_shadow_color"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text=""
+        android:textColor="@color/overlay_text_color"
+        android:textSize="@dimen/overlay_text_size" />
+
+    <TextView
+        android:id="@+id/zoomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/overlay_text_margin"
+        android:shadowColor="@color/overlay_shadow_color"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text=""
+        android:textColor="@color/overlay_text_color"
+        android:textSize="@dimen/overlay_text_size" />
+
+    <TextView
+        android:id="@+id/fpsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/overlay_text_margin"
+        android:shadowColor="@color/overlay_shadow_color"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text=""
+        android:textColor="@color/overlay_text_color"
+        android:textSize="@dimen/overlay_text_size" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/overlay_text_margin"
+        android:shadowColor="@color/overlay_shadow_color"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text=""
+        android:textColor="@color/overlay_text_color"
+        android:textSize="@dimen/overlay_text_size" />
+
+    <TextView
+        android:id="@+id/logText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/overlay_text_margin"
+        android:shadowColor="@color/overlay_shadow_color"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text=""
+        android:textColor="@color/overlay_text_color"
+        android:textSize="@dimen/overlay_text_size"
+        android:visibility="gone" />
+
+</LinearLayout>

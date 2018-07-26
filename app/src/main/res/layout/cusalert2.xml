@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Enter Your Message"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/success"
+            android:gravity="center"
+            android:background="@color/colorPrimary" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/succes_id"
+            android:text=""
+            android:hint="Here..."
+            android:gravity="top"
+            android:textSize="15dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/success"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/lin" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/lin"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/cancelbutton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:textColor="#FFF"
+                />
+            <Button
+                android:id="@+id/send_button"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="3dp"
+                android:text="Send"
+                android:textColor="#FFF"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

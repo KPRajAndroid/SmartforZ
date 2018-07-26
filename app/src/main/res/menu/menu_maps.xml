@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login"
+    android:title="@string/map">
+
+    <item
+        android:id="@+id/testAction"
+        android:title="Test"
+        android:orderInCategory="0"
+        app:showAsAction="always" />
+
+      <item
+        android:id="@+id/maptype"
+        android:orderInCategory="1"
+        android:title="Map Type">
+        <menu >
+            <group
+                android:id="@+id/groupmaptype"
+                android:checkableBehavior="single"
+                >
+                <item
+                    android:id="@+id/maptypeNORMAL"
+                    android:title="NORMAL"
+                    android:checked="true"
+                    />
+                <item
+                    android:id="@+id/maptypeSATELLITE"
+                    android:title="SATELLITE"
+                    />
+                <item
+                    android:id="@+id/maptypeTERRAIN"
+                    android:title="TERRAIN" />
+                <item
+                    android:id="@+id/maptypeHYBRID"
+                    android:title="HYBRID" />
+                <item
+                    android:id="@+id/maptypeNONE"
+                    android:title="NONE" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/ShiftStart"
+        android:orderInCategory="2"
+        android:title=""></item>
+
+    <item
+        android:id="@+id/ParkOptn"
+        android:orderInCategory="3"
+        android:title="Parking Issue"></item>
+
+
+</menu>
